@@ -2,9 +2,11 @@ from utils import CopelandGalaiCalc
 
 model = CopelandGalaiCalc()
 
-mu = 480
-sigma = 20
-pi = 0.4
+print("---Normal Distribution---")
+model.bid_ask_normal_distribution(mu = 100, sigma = 10, pi= 0.3)
 
-model.bid_ask_normal_distribution(mu, sigma, pi)
+print("---Exponential Distribution---")
+model.bid_ask_exponencial_distribution(lam = 0.5, pi= 0.3)
+
+
 
